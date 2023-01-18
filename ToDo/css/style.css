@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: rgb(2, 0, 36) fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(0%, rgb(0, 255, 115)), to(rgb(0, 212, 255))) fixed;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 255, 115) 0%, rgb(0, 212, 255) 100%) fixed;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 800px;
+  background: green;
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  border: lime 2px solid;
+  background: rgb(0, 188, 190);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 188, 190)), to(rgb(22, 158, 0)));
+  background: linear-gradient(0deg, rgb(0, 188, 190) 0%, rgb(22, 158, 0) 100%);
+}
+.wrapper .header_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.wrapper .header_block h1 {
+  font-size: 30px;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.wrapper .header_block h2 {
+  font-size: 20px;
+  color: whitesmoke;
+}
+.wrapper .task_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.wrapper .task_block .task_list_block {
+  height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .task_block .task_list_block ul {
+  width: 80%;
+}
+.wrapper .task_block .task_list_block ul li {
+  position: relative;
+  font-size: 20px;
+  height: 30px;
+  color: whitesmoke;
+  list-style: inside;
+}
+.wrapper .task_block .task_list_block ul li .button_delete {
+  position: absolute;
+  right: 0px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  border: lime solid 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0px 5px 0px 5px;
+}
+.wrapper .task_block .task_list_block ul li .button_delete:hover {
+  background: #82E0AA;
+  color: whitesmoke;
+}
+.wrapper .task_block .task_list_block ul li .button_delete:active {
+  background: green;
+  color: whitesmoke;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+.wrapper .task_block .nav_block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.wrapper .task_block .nav_block input {
+  font-size: 16px;
+  border-radius: 5px;
+  width: 450px;
+  height: 30px;
+  border: lime solid 2px;
+  text-align: center;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.wrapper .task_block .nav_block input:active {
+  background: #82E0AA;
+  color: whitesmoke;
+}
+.wrapper .task_block .nav_block button {
+  padding: 0px 5px 0px 5px;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  border: lime solid 2px;
+  text-transform: uppercase;
+}
+.wrapper .task_block .nav_block button:hover {
+  background: #82E0AA;
+  color: whitesmoke;
+}
+.wrapper .task_block .nav_block button:active {
+  background: green;
+  color: whitesmoke;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
